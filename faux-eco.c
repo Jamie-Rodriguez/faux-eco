@@ -8,11 +8,11 @@
 int main(const int argc, char const *argv[]) {
 	if (argc < 2) {
 		printf("Error: data file not provided as command line argument\n");
-		return EXIT_FAILURE;
+		exit(EXIT_FAILURE);
 	}
 	if (argc > 2) {
 		printf("Error: too many command line arguments provided\n");
-		return EXIT_FAILURE;
+		exit(EXIT_FAILURE);
 	}
 
 
