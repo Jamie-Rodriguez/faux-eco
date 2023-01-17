@@ -8,7 +8,7 @@ const char text[] = {
 
 
 int main(const int argc, char const *argv[]) {
-	printf("%s", text);
+	printf("%.*s", (int) (sizeof(text) / sizeof(text[0])), text);
 
 	return EXIT_SUCCESS;
 }
